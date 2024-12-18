@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graph Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #graphTypeDisplay {
+      margin-top: 20px;
+      font-size: 18px;
+      text-align: center;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Graph Visualizer</h1>
+  </header>
+  <main>
+    <section class="controls">
+      <div class="input-group">
+        <label for="vertexCount">Number of Vertices:</label>
+        <input type="number" id="vertexCount" placeholder="Enter vertices count">
+      </div>
+      <div class="input-group">
+        <label for="edgeCount">Number of Edges:</label>
+        <input type="number" id="edgeCount" placeholder="Enter edges count">
+      </div>
+      <div class="input-group">
+        <label for="loopCount">Number of Loops:</label>
+        <input type="number" id="loopCount" placeholder="Enter loops count">
+      </div>
+      <button id="generateGraphBtn">Generate Graph</button>
+      <button id="clearGraphBtn" class="danger">Clear Graph</button>
+      <button id="toggleDirectedBtn">Make Directed</button> <!-- زر التبديل -->
+    </section>
+    <canvas id="graphCanvas"></canvas>
+    <div id="graphTypeDisplay"></div>
+  </main>
+  <footer>
+    <p>Made with ❤️ by [graph team]</p>
+  </footer>
+  <script src="graph.js"></script>
+</body>
+</html>
